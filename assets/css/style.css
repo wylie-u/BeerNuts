@@ -1,0 +1,38 @@
+.jumbotron {
+    background-image: url(../images/BeerNuts.png) ;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+ 
+}
+
+body {
+    
+    background-image: url(../images/taps2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-right:0px;
+}
+
+
+.nav-link {
+    color: whitesmoke;
+    font-family: 'Russo One';font-size: 22px;
+}
+
+#navLink1 {
+    margin-top: 45px;
+    margin-left: 0px;
+}
+
+#navLink2 {
+    margin-top: 45px;
+    margin-right: 0px;
+}
+
+#navLink3 {
+    margin-top: 45px;
+    margin-left: 40px
+
+}

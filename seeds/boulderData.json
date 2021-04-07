@@ -1,0 +1,26 @@
+[
+{
+    "name": "Wild Provisions Beer Project",
+    "location": "2205 Central Ave. Boulder, CO 80301",
+    "phone_number": "303-993-3598",
+    "food": "no",
+    "outdoor_seating": "yes",
+    "website": "www.wildprovisionsbeer.com"
+ },
+ {
+     "name": "Avery Brewing Company",
+     "location": "4910 Nautilus Court Boulder, CO 80301",
+     "phone_number": "303-440-4324",
+     "food": "yes",
+     "outdoor_seating": null,
+     "website": "www.averybrewing.com"
+   },
+   {
+     "name": "Sanitas Brewing Company",
+     "location": "3550 Frontier Ave. Unit A Boulder, CO 80301",
+     "phone_number": "303-442-4130",
+     "food": "yes",
+     "outdoor_seating": "yes",
+     "website": "www.sanitasbrewing.com"
+   }
+]

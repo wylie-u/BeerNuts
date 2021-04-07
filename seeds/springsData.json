@@ -1,0 +1,26 @@
+[
+    {
+       "name": "Black Forest Brewing Company",
+       "location": "11590 Black Forest Rd. Unit 50 Colorado Springs, CO 80908",
+       "phone_number": "719-396-2011",
+       "food": "no",
+       "outdoor_seating": "yes",
+       "website": "blackforestbrewingco.com"
+    },
+    {
+        "name": "Dueces Wild Brewery",
+        "location": "660 Peterson Road Colorado Springs, CO 80915",
+        "phone_number": "719-394-4811",
+        "food": "no",
+        "outdoor_seating": null,
+        "website": "www.dwbbrewery.com"
+      },
+      {
+        "name": "Cerberus Brewing Company",
+        "location": "702 W Colorado Ave. Colorado Springs, CO 80905",
+        "phone_number": "719-636-2337",
+        "food": "yes",
+        "outdoor_seating": "yes",
+        "website": "www.cerberusbrewingco.com/"
+      }
+]
