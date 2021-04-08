@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: url(../images/BeerNuts.png) ;
+    background-image: url(/assets/images/BeerNuts.png) ;
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +10,7 @@
 
 body {
     
-    background-image: url(../images/taps3.jpg);
+    background-image: url(/assets/images/taps2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     margin-right:0px;
