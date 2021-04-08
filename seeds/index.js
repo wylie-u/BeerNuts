@@ -8,6 +8,7 @@ const springsData = require("./springsData.json")
 
 const sequelize = require('../config/connection');
 const seedAll = async () => {
+  // await info tells it to wait for the function before to finish
     await sequelize.sync({ force: true });
     console.log('\n----- DATABASE SYNCED -----\n');
     const seedBoulder = await Info.bulkCreate(boulderData);
