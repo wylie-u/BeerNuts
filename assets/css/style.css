@@ -3,13 +3,14 @@
     background-color: black;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 400px;
     height: 250px;
  
 }
 
 body {
     
-    background-image: url(../images/taps2.jpg);
+    background-image: url(../images/taps3.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     margin-right:0px;
@@ -23,16 +24,55 @@ body {
 
 #navLink1 {
     margin-top: 45px;
-    margin-left: 0px;
+    margin-left: 0px; 
+} 
+
+#navLink2 { 
+     margin-top: 45px;
+     
+ } 
+ #navLink3 { 
+     margin-top: 45px;
+    margin-left: 40px 
+
+ } 
+
+h1 {
+    text-align: center;
+    color:black;
 }
 
-#navLink2 {
-    margin-top: 45px;
-    margin-right: 0px;
+.form-inline {
+    width: 600px;
+    margin-left: 250px;
 }
 
-#navLink3 {
-    margin-top: 45px;
-    margin-left: 40px
+.form-control {
+    width: 600px !important;
+}
 
+#city-search-button {
+    width: 180px;
+    margin-left: 350px;
+   
+}
+
+#exampleInputPassword1 {
+    width: 400px !important;
+    margin-left: 80px;
+}
+
+#exampleInputEmail1 {
+    width: 400px !important;
+    margin-left: 80px;
+}
+
+.card {
+    margin-left: 260px;
+    padding-bottom: 20px;
+}
+
+#login-sub-button {
+    width: 100px !important;
+    margin-left: 250px;
 }
