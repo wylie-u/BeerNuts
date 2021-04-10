@@ -3,13 +3,13 @@ const path = require('path');
 const { Info } = require('../models');
 const withAuth = require('../utils/auth');
 
-// gets to the home page
+// gets to the home page WORKS
 router.get('/', async (req, res) => {
   // Here, index.html is rendered
   res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
-// gets the login page 
+// gets the login page WORKS
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   //if (req.session.logged_in) {
@@ -20,7 +20,7 @@ router.get('/login', (req, res) => {
   // method below is for handlebars
   //res.render('login');
 });
-
+// gets the about page WORKS (needs html)
 router.get('/about', (req, res) => {
   
   //if (req.session.logged_in) {
@@ -28,6 +28,15 @@ router.get('/about', (req, res) => {
   //return;
   //}
   res.sendFile(path.join(__dirname, '../views/about.html'));
+  // method below is for handlebars
+  //res.render('login');
+});
+
+// signup route works 
+router.get('/signup', (req, res) => {
+  
+  
+  res.sendFile(path.join(__dirname, '../views/signup.html'));
   // method below is for handlebars
   //res.render('login');
 });
