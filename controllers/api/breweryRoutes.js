@@ -1,23 +1,31 @@
+const router = require('express').Router();
+const { Info } = require('../../models');
 
+router.get('/', (req, res) => {
+  Info.findAll({})
+    .then((results) => {
+      res.json(results);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
 
+module.exports = router;
 
-// router.get('/project/:id', async (req, res) => {
+// router.get('/Info/:id', async (req, res) => {
 //     try {
-//       const projectData = await Project.findByPk(req.params.id, {
-//         include: [
-//           {
-//             model: User,
-//             attributes: ['name'],
-//           },
-//         ],
+//       const breweryData = await Info.findByPk(req.params.id, {
+
 //       });
-  
-//       const project = projectData.get({ plain: true });
-  
-//       res.render('project', {
-//         ...project,
-//         logged_in: req.session.logged_in
-//       });
+
+//       const brewery = breweryData.get({ plain: true });
+
+//     //   res.render('project', {
+//     //     ...project,
+//     //     logged_in: req.session.logged_in
+//     //   });
+//     res.sendFile(path.join(__dirname, '../breweryData'));
 //     } catch (err) {
 //       res.status(500).json(err);
 //     }
