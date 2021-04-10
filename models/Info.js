@@ -10,6 +10,10 @@ Info.init({
     primaryKey: true,
     autoIncrement: true,
   },
+  city_name: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   name: {
     type: DataTypes.STRING,
     allowNull: false,
