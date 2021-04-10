@@ -84,7 +84,10 @@ h1 {
     margin-left: 260px;
     padding-bottom: 20px;
 }
-
+.card-signup {
+    margin-left: 260px;
+    padding-bottom: 20px; 
+}
 
 #login-sub-button {
     width: 100px !important;
