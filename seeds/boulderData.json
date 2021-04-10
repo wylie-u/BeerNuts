@@ -10,6 +10,7 @@
  {
      "name": "Avery Brewing Company",
      "location": "4910 Nautilus Court Boulder, CO 80301",
+     "city_name": "Boulder",
      "phone_number": "303-440-4324",
      "food": "yes",
      "outdoor_seating": null,
