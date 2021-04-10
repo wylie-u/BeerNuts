@@ -56,22 +56,36 @@ h1 {
    
 }
 
-#exampleInputPassword1 {
+#signup-email {
     width: 400px !important;
     margin-left: 80px;
 }
 
-#exampleInputEmail1 {
+#signup-password {
     width: 400px !important;
     margin-left: 80px;
 }
 
+
+#login-password {
+    width: 400px !important;
+    margin-left: 80px;
+}
+#login-email {
+    width: 400px !important;
+    margin-left: 80px;
+}
 .card {
     margin-left: 260px;
     padding-bottom: 20px;
 }
 
 #login-sub-button {
+    width: 100px !important;
+    margin-left: 250px;
+}
+
+#signup-sub-button {
     width: 100px !important;
     margin-left: 250px;
 }
