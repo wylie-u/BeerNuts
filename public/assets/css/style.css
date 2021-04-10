@@ -75,10 +75,16 @@ h1 {
     width: 400px !important;
     margin-left: 80px;
 }
-.card {
+.card-about {
+  margin-left: 80px;
+    text-align: center;
+
+}
+.card-login {
     margin-left: 260px;
     padding-bottom: 20px;
 }
+
 
 #login-sub-button {
     width: 100px !important;
@@ -89,3 +95,7 @@ h1 {
     width: 100px !important;
     margin-left: 250px;
 }
+
+img {
+    border-radius: 50%;
+  }
