@@ -1,8 +1,10 @@
 
 const Info = require('../models/Info');
+const User = require('../models/users');
 const boulderData = require("./boulderData.json")
 const denverData = require("./denverData.json")
 const springsData = require("./springsData.json")
+const userData = require("./userData.json")
 
 
 
@@ -19,6 +21,14 @@ const seedAll = async () => {
   
     const seedSprings = await Info.bulkCreate(springsData);
     console.log('\n----- SPRINGS SEEDED -----\n');
+
+    const users = await User.bulkCreate(userData, {
+      individualHooks: true,
+      returning: true,
+    });
+    console.log('\n----- USERS SEEDED -----\n');
+    // const seedUser = await Info.bulkCreate(userData);
+    // console.log('\n----- USERS SEEDED -----\n');
   
     process.exit(0);
   };
