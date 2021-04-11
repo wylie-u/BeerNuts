@@ -7,6 +7,10 @@
  
 }
 
+a:hover {
+    color:rgba(255, 217, 0, 0.815) !important;
+}
+
 body {
     
     background-image: url(/assets/images/taps2.jpg);
