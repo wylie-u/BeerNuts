@@ -2,6 +2,7 @@
     {
       "name": "Zuni Street Brewing Company",
       "location": "1625 Perry St. Denver, CO 80204",
+      "city_name": "Denver",
       "phone_number": "970-498-9070",
       "food": "yes",
       "outdoor_seating": "yes",
@@ -10,6 +11,7 @@
     {
         "name": "Odell Brewing RiNo Brewhouse",
         "location": "2945 Larimer St. Denver, CO 80205",
+        "city_name": "Denver",
         "phone_number": "720-795-7862",
         "food": "no",
         "outdoor_seating": "yes",
@@ -18,6 +20,7 @@
       {
         "name": "Dos Luces",
         "location": "1236 South Broadway Denver, CO 80210",
+        "city_name": "Denver",
         "phone_number": "720-379-7763",
         "food": "yes",
         "outdoor_seating": "no",
