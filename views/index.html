@@ -1,74 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/assets/css/style.css">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/assets/css/style.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-<link href='https://fonts.googleapis.com/css?family=Russo One' rel='stylesheet'>
-
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Russo One" rel="stylesheet" />
 
 <head>
-
     <title>BeerNuts</title>
-
 </head>
 
-
 <body>
-    <div class="jumbotron jumbotron-fluid" style="background-color: #232624;">
+    <div class="jumbotron jumbotron-fluid" style="background-color: #232624">
         <div class="container">
             <div class="row">
-
-
                 <div class="col-lg-2" id="navLink1">
                     <a class="nav-link" href="/">Home</a>
                 </div>
                 <div class="col-lg-2" id="navLink2">
                     <a class="nav-link" href="/login">Log in</a>
                 </div>
-                <div class="col-lg-2">
-
-                </div>
-                <div class="col-lg-2">
-
-                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-2"></div>
                 <div class="col-lg-2" id="navLink3">
                     <a class="nav-link" href="/about">About</a>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 
-
     <div class="container">
-        <h1>
-            Colorado has 428 breweries, and growing. Find your spot.
-            Search by city, or search by name of brewery.
-        </h1>
-        <br>
+        <div class="row hero">
+            <h1>
+                Colorado has 428 breweries, and growing. Find your spot. Search by city,
+                or search by name of brewery.
+            </h1>
+            <br />
 
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            </form>
+            <br />
+            <button type="button" class="btn btn-dark" id="city-search-button" type="submit">
+                Search by city
+            </button>
+            <button type="button" class="btn btn-dark" id="name-search-button" type="submit">
+                Search brewery name
+            </button>
+        </div>
+        <div class="brewery-info">
+            <div class="row">
+                <h2>Get Brewery Info</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 buttons-area">
+                    <div class="btn-div">
+                        <button type="button" class="brewery-button btn btn-dark btn-block" id="avery-btn" type="">
+                            Avery
+                        </button>
+                    </div>
+                    <div class="btn-div">
+                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" type="">
+                            Wild Provisions
+                        </button>
+                    </div>
+                    <div class="btn-div">
+                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" type="">
+                            Sanitas
+                        </button>
+                    </div>
+                    <div class="btn-div">
+                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" type="">
+                            Zuni Street
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-title" id="brewery-title">Brewery Placeholder</h5>
+                        </div>
+                        <div class="card-body" id="brewery-info-card">
 
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <ul class="card-text">
+                                <li>
+                                    City:
+                                </li>
+                                <li>
+                                    Address:
+                                </li>
+                                <li>
+                                    Phone Number:
+                                </li>
+                                <li>
+                                    Outdoor Seating:
+                                </li>
+                                <li>
+                                    Has Food:
+                                </li>
+                            </ul>
+                            <p class="card-text">Get more info on their website:
+                            </p>
+                            <a href="#" class="btn btn-dark">Brewery Name</a>
+                        </div>
+                    </div>
+                </div>
 
-        </form>
-        <br>
-        <button type="button" class="btn btn-dark" id="city-search-button" type="submit">Search by city</button>
-        <button type="button" class="btn btn-dark" id="name-search-button" type="submit">Search brewery name</button>
-
-
-
-
-
-
+            </div>
+        </div>
 
     </div>
-
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
