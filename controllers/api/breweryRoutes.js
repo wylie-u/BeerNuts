@@ -14,24 +14,43 @@ router.get('/', (req, res) => {
 
 
 
+// router.get('/:id', async (req, res) => {
+//   // find a single product by its `id`
+//   try {
+//     const breweryData = await Info.findByPk({
+//       where: {
+//         id: req.params.id,
+//       },
+//       // be sure to include its associated Category and Tag data
+      
+//     });
+//     if (!breweryData) {
+//       res.status(404).json({ message: 'No product found with this id!' });
+//       return;
+//     }
+//     res.status(200).json(breweryData);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
+router.get('/:id', async (req, res) => {
+  try {
+    const breweryData = await Info.findByPk(req.params.id, {
+      include: [
+        {
+          attributes: ['name'],
+        },
+      ],
+    });
+
+    const brewery = breweryData.get({ plain: true });
+
+    res.status(200).json(breweryData);
+  }catch (err) {
+    res.status(400).json(err);
+  }
+ 
+});
 
 module.exports = router;
-
-// router.get('/Info/:id', async (req, res) => {
-//     try {
-//       const breweryData = await Info.findByPk(req.params.id, {
-
-//       });
-
-//       const brewery = breweryData.get({ plain: true });
-
-//     //   res.render('project', {
-//     //     ...project,
-//     //     logged_in: req.session.logged_in
-//     //   });
-//     res.sendFile(path.join(__dirname, '../breweryData'));
-//     } catch (err) {
-//       res.status(500).json(err);
-//     }
-//   });
