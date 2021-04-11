@@ -1,5 +1,5 @@
 
-const Info = require('../models/breweryData');
+const Info = require('../models/Info');
 const boulderData = require("./boulderData.json")
 const denverData = require("./denverData.json")
 const springsData = require("./springsData.json")
