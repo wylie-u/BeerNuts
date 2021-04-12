@@ -11,6 +11,17 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/:id', async (req, res) => {
+  try {
+    console.log(req.params.id);
+    const breweryData = await Info.findByPk(req.params.id)
+    const brewery = breweryData.get({ plain: true });
+
+    res.status(200).json(brewery);
+  }catch (err) {
+    res.status(400).json(err);
+  }
+});
 
 
 
@@ -34,23 +45,23 @@ router.get('/', (req, res) => {
 //   }
 // });
 
-router.get('/:id', async (req, res) => {
-  try {
-    const breweryData = await Info.findByPk(req.params.id, {
-      include: [
-        {
-          attributes: ['name'],
-        },
-      ],
-    });
+// router.get('/:id', async (req, res) => {
+//   try {
+//     const breweryData = await Info.findByPk(req.params.id, {
+//       include: [
+//         {
+//           attributes: ['name'],
+//         },
+//       ],
+//     });
 
-    const brewery = breweryData.get({ plain: true });
+//     const brewery = breweryData.get({ plain: true });
 
-    res.status(200).json(breweryData);
-  }catch (err) {
-    res.status(400).json(err);
-  }
+//     res.status(200).json(breweryData);
+//   }catch (err) {
+//     res.status(400).json(err);
+//   }
  
-});
+// });
 
 module.exports = router;
