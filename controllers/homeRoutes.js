@@ -5,8 +5,10 @@ const withAuth = require('../utils/auth');
 
 // gets to the home page WORKS
 router.get('/', async (req, res) => {
+  // (MPF)This renders handlebars by calling the main.hbs file in the newViews folder.
+  res.render('main');
   // Here, index.html is rendered
-  res.sendFile(path.join(__dirname, '../views/index.html'));
+  // res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
 // gets the login page WORKS
