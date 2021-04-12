@@ -18,9 +18,9 @@ router.get('/login', (req, res) => {
   //res.redirect('/profile');
   //return;
   //}
-  res.sendFile(path.join(__dirname, '../views/login.html'));
+  // res.sendFile(path.join(__dirname, '../views/login.html'));
   // method below is for handlebars
-  //res.render('login');
+  res.render('login');
 });
 // gets the about page WORKS (needs html)
 router.get('/about', (req, res) => {
@@ -29,18 +29,18 @@ router.get('/about', (req, res) => {
   //res.redirect('/profile');
   //return;
   //}
-  res.sendFile(path.join(__dirname, '../views/about.html'));
+  // res.sendFile(path.join(__dirname, '../views/about.html'));
   // method below is for handlebars
-  //res.render('login');
+  res.render('login');
 });
 
 // signup route works 
 router.get('/signup', (req, res) => {
   
   
-  res.sendFile(path.join(__dirname, '../views/signup.html'));
+  // res.sendFile(path.join(__dirname, '../views/signup.html'));
   // method below is for handlebars
-  //res.render('login');
+  res.render('login');
 });
 
 // router.get('/', async (req, res) => {
