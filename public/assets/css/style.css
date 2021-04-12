@@ -170,3 +170,6 @@ img {
           padding-top: 100px;
       }
 }
+.card-text li {
+  list-style-type: none;
+}
