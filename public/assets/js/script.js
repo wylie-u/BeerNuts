@@ -5,7 +5,7 @@ let breweryTitle = document.getElementById('brewery-title');
 // Fetch function to our api
 function getAveryData() {
   console.log('AVERY CLICKED');
-  fetch('http://localhost:3001/api/brewery/2')
+  fetch('/api/brewery/2')
     .then((response) => response.json())
     .then((data) => {
       printCard(data);
