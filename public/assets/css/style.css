@@ -128,3 +128,7 @@ img {
   /* background-color: #ffffff; */
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
+
+.card-text li {
+  list-style-type: none;
+}

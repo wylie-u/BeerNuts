@@ -57,22 +57,23 @@
             <div class="row">
                 <div class="col-md-6 buttons-area">
                     <div class="btn-div">
-                        <button type="button" class="brewery-button btn btn-dark btn-block" id="avery-btn" type="">
-                            Avery
-                        </button>
-                    </div>
-                    <div class="btn-div">
-                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" type="">
+                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" data-id="1" type="">
                             Wild Provisions
                         </button>
                     </div>
                     <div class="btn-div">
-                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" type="">
+                        <button type="button" class="brewery-button btn btn-dark btn-block" id="avery-btn" data-id="2"
+                            type="">
+                            Avery
+                        </button>
+                    </div>
+                    <div class="btn-div">
+                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" data-id="3" type="">
                             Sanitas
                         </button>
                     </div>
                     <div class="btn-div">
-                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" type="">
+                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" data-id="4" type="">
                             Zuni Street
                         </button>
                     </div>
@@ -84,7 +85,7 @@
                         </div>
                         <div class="card-body" id="brewery-info-card">
 
-                            <ul class="card-text">
+                            <ul class="card-text" id="brewery-info-list">
                                 <li>
                                     City:
                                 </li>
@@ -101,9 +102,7 @@
                                     Has Food:
                                 </li>
                             </ul>
-                            <p class="card-text">Get more info on their website:
-                            </p>
-                            <a href="#" class="btn btn-dark">Brewery Name</a>
+                            <a href="" class="btn btn-dark" target="_blank" id="brewery-link">Go to Website</a>
                         </div>
                     </div>
                 </div>
@@ -112,6 +111,9 @@
         </div>
 
     </div>
+    <!-- JQuery Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Custom Script Link -->
     <script src="/assets/js/script.js"></script>
 </body>
 
