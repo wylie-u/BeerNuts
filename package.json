@@ -1,7 +1,6 @@
 {
   "name": "module-13-challenge-orm",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,6 +16,10 @@
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
     "connect-session-sequelize": "^7.1.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
@@ -24,5 +27,14 @@
     "mysql2": "^2.2.5",
     "path": "^0.12.7",
     "sequelize": "^5.22.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wylie-u/BeerNuts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wylie-u/BeerNuts/issues"
+  },
+  "homepage": "https://github.com/wylie-u/BeerNuts#readme",
+  "description": ""
 }
