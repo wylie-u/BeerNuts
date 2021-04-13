@@ -7,7 +7,7 @@ const exphbs = require('express-handlebars');
 // gets to the home page WORKS
 router.get('/', async (req, res) => {
   // (MPF)This renders handlebars by calling the main.hbs file in the newViews folder.
-  res.render('main');
+  res.render('index');
   // Here, index.html is rendered
   // res.sendFile(path.join(__dirname, '../views/index.html'));
 });
@@ -26,7 +26,7 @@ router.get('/login', (req, res) => {
 
 router.get('/profile', withAuth, (req, res) => {
   
-  res.sendFile(path.join(__dirname, '../views/profile.html'));
+  res.render('profile')
   
 });
 
@@ -39,16 +39,15 @@ router.get('/about', (req, res) => {
   //}
   // res.sendFile(path.join(__dirname, '../views/about.html'));
   // method below is for handlebars
-  res.render('login');
+  res.render('about');
 });
-
 // signup route works 
 router.get('/signup', (req, res) => {
   
   
   // res.sendFile(path.join(__dirname, '../views/signup.html'));
   // method below is for handlebars
-  res.render('login');
+  res.render('signup');
 });
 
 // router.get('/', async (req, res) => {
