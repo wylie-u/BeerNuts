@@ -3,6 +3,7 @@ let breweryTitle = document.getElementById('brewery-title');
 let breweryInfoList = document.getElementById('brewery-info-list');
 let breweryBtnLink = document.getElementById('brewery-link');
 
+
 // Variable for all buttons
 // let breweryBtn = document.querySelectorAll('.brewery-button');
 
@@ -41,3 +42,19 @@ function addHandler() {
 }
 
 addHandler();
+
+const api_url = 
+      "http://localhost:3001/api/brewery";
+  
+// Defining async function
+async function getapi(url) {
+    
+    // Storing response
+    const response = await fetch(url);
+    
+    // Storing data in form of JSON
+    var data = await response.json();
+    console.log(data);
+    
+}
+getapi(api_url);

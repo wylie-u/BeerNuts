@@ -23,6 +23,20 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+router.get('/:city_name', (req, res) => {
+ Info.findAll({ where: { 
+    city_name: req.params.city_name
+ } })
+
+    .then((results) => {
+      res.json(results);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
+
 
 
 // router.get('/:id', async (req, res) => {
