@@ -1,108 +1,175 @@
-.jumbotron {
+.navbar {
     background-image: url(/assets/images/BeerNuts.png);
+    background-color: #232624;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
     background-size: 400px;
     height: 250px;
  
 }
 
 a:hover {
-    color:rgba(255, 217, 0, 0.815) !important;
+  color: rgba(255, 217, 0, 0.815) !important;
 }
 
 body {
-    
-    background-image: url(/assets/images/taps2.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    margin-right:0px;
+  background-image: url(/assets/images/taps2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0px;
 }
 
-
-.nav-link {
-    color: whitesmoke;
-    font-family: 'Russo One';font-size: 22px;
+.navbar-nav{
+  font-family: 'Russo One';
+  font-size: 22px;
+  
 }
 
-#navLink1 {
-    margin-top: 45px;
-    margin-left: 0px; 
-} 
+#nav-link1 {
+  margin-top: 45px;
+  margin-left: 200px;
+  color: whitesmoke;
+}
 
-#navLink2 { 
-     margin-top: 45px;
-     
- } 
- #navLink3 { 
-     margin-top: 45px;
-    margin-left: 40px 
-
- } 
+#nav-link2 {
+  margin-top: 45px;
+  margin-left: 150px;
+  color: whitesmoke;
+}
+#nav-link3 {
+  margin-top: 45px;
+  margin-left: 500px;
+  color: whitesmoke;
+}
 
 h1 {
-    text-align: center;
-    color:black;
+  text-align: center;
+  color: black;
 }
 
 .form-inline {
-    width: 600px;
-    margin-left: 250px;
+
+  width: 600px !important;
+  margin-left: 345px;
+  margin-top: 20px !important;
 }
 
-.form-control {
-    width: 600px !important;
-}
 
 #city-search-button {
-    width: 180px;
-    margin-left: 350px;
-   
+
+  width: 180px;
+  margin-left: 450px;
+  margin-top: 10px;
+}
+
+#name-search-button {
+    width: 180px !important;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 #signup-email {
-    width: 400px !important;
-    margin-left: 80px;
+  width: 400px !important;
+  margin-left: 80px;
 }
 
 #signup-password {
-    width: 400px !important;
-    margin-left: 80px;
+  width: 400px !important;
+  margin-left: 80px;
 }
-
 
 #login-password {
-    width: 400px !important;
-    margin-left: 80px;
+  width: 400px !important;
+  margin-left: 80px;
 }
 #login-email {
-    width: 400px !important;
-    margin-left: 80px;
+  width: 400px !important;
+  margin-left: 80px;
 }
 .card-about {
+  margin-top: 20px;
   margin-left: 80px;
-    text-align: center;
-
+  text-align: center;
 }
 .card-login {
-    margin-left: 260px;
-    padding-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 260px;
+  padding-bottom: 20px;
 }
 .card-signup {
-    margin-left: 260px;
-    padding-bottom: 20px; 
+  margin-top: 20px;
+  margin-left: 260px;
+  padding-bottom: 20px;
 }
 
 #login-sub-button {
-    width: 100px !important;
-    margin-left: 250px;
+  width: 100px !important;
+  margin-left: 250px;
 }
 
 #signup-sub-button {
-    width: 100px !important;
-    margin-left: 250px;
+  width: 100px !important;
+  margin-left: 250px;
 }
 
 img {
-    border-radius: 50%;
-  }
+  border-radius: 50%;
+}
+
+.hero {
+  margin-bottom: 10em;
+}
+
+.brewery-info {
+  background-color: rgba(255, 255, 255, 0.349);
+  border: 2px;
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 20em;
+  /* height: max-content; */
+}
+
+.brewery-button {
+  margin: 0.5em !important;
+}
+
+.btn-div {
+  width: 14em;
+  height: auto;
+  padding: 1em;
+  float: left;
+}
+
+.buttons-area {
+  /* background-color: #ffffff; */
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+@media only screen and (max-width:990px) {
+    #nav-link1 {
+    margin-left: 0;
+    margin-top: 0;
+    }
+    #nav-link2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #nav-link3 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .form-inline {
+
+        width: 300px;
+        margin-left: 0;
+      }
+      #city-search-button {
+          margin-left: 0px;
+      }
+      h1 {
+          padding-top: 100px;
+      }
+}
+.card-text li {
+  list-style-type: none;
+}
