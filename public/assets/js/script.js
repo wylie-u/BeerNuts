@@ -16,6 +16,15 @@ function getBreweryData(id) {
     });
 }
 
+// //CityNameFetch
+// function getBreweryData(id) {
+//   fetch(`/api/brewery/${city_name}`)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       printCard(data);
+//     });
+// }
+
 // Print data onto the card
 function printCard(data) {
   let cardLink = breweryBtnLink;
