@@ -20,6 +20,13 @@ router.get('/login', (req, res) => {
   // method below is for handlebars
   //res.render('login');
 });
+
+router.get('/profile', withAuth, (req, res) => {
+  
+  res.sendFile(path.join(__dirname, '../views/profile.html'));
+  
+});
+
 // gets the about page WORKS (needs html)
 router.get('/about', (req, res) => {
   
