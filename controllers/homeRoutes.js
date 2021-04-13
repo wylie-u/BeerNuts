@@ -2,11 +2,14 @@ const router = require('express').Router();
 const path = require('path');
 const { Info } = require('../models');
 const withAuth = require('../utils/auth');
+const exphbs = require('express-handlebars');
 
 // gets to the home page WORKS
 router.get('/', async (req, res) => {
+  // (MPF)This renders handlebars by calling the main.hbs file in the newViews folder.
+  res.render('main');
   // Here, index.html is rendered
-  res.sendFile(path.join(__dirname, '../views/index.html'));
+  // res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
 // gets the login page WORKS
@@ -16,10 +19,17 @@ router.get('/login', (req, res) => {
   //res.redirect('/profile');
   //return;
   //}
-  res.sendFile(path.join(__dirname, '../views/login.html'));
+  // res.sendFile(path.join(__dirname, '../views/login.html'));
   // method below is for handlebars
-  //res.render('login');
+  res.render('login');
 });
+
+router.get('/profile', withAuth, (req, res) => {
+  
+  res.sendFile(path.join(__dirname, '../views/profile.html'));
+  
+});
+
 // gets the about page WORKS (needs html)
 router.get('/about', (req, res) => {
   
@@ -27,18 +37,18 @@ router.get('/about', (req, res) => {
   //res.redirect('/profile');
   //return;
   //}
-  res.sendFile(path.join(__dirname, '../views/about.html'));
+  // res.sendFile(path.join(__dirname, '../views/about.html'));
   // method below is for handlebars
-  //res.render('login');
+  res.render('login');
 });
 
 // signup route works 
 router.get('/signup', (req, res) => {
   
   
-  res.sendFile(path.join(__dirname, '../views/signup.html'));
+  // res.sendFile(path.join(__dirname, '../views/signup.html'));
   // method below is for handlebars
-  //res.render('login');
+  res.render('login');
 });
 
 // router.get('/', async (req, res) => {
