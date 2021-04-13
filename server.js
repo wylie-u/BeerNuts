@@ -24,13 +24,13 @@ app.use(bodyParser.urlencoded({
 // (MPF) Handlebars settings 
 
 //setting views pathway
-app.set('views', path.join(__dirname, 'views/'));
+app.set('views', path.join(__dirname, '/views/layouts'));
 
 //setting engine for hbs
 app.engine('hbs', exphbs({
   defaultLayout: 'main',
   extname: '.hbs',
-  layoutsDir: __dirname + 'views/layouts'
+  layoutsDir: __dirname + '/views/layouts/'
 }));
 app.set('view engine', 'hbs');
 

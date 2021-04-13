@@ -2,6 +2,7 @@ const router = require('express').Router();
 const path = require('path');
 const { Info } = require('../models');
 const withAuth = require('../utils/auth');
+const exphbs = require('express-handlebars');
 
 // gets to the home page WORKS
 router.get('/', async (req, res) => {
