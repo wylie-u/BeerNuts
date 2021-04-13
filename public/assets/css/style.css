@@ -27,20 +27,26 @@ body {
 
 #nav-link1 {
   margin-top: 45px;
-  margin-left: 200px;
+  margin-left: 300px;
   color: whitesmoke;
 }
 
 #nav-link2 {
   margin-top: 45px;
-  margin-left: 150px;
+  margin-left: 100px;
   color: whitesmoke;
 }
 #nav-link3 {
   margin-top: 45px;
-  margin-left: 500px;
+  margin-left: 430px;
   color: whitesmoke;
 }
+
+#nav-link4 {
+    margin-top: 45px;
+    margin-left: 100px;
+    color: whitesmoke;
+  }
 
 h1 {
   text-align: center;
@@ -78,6 +84,11 @@ h1 {
   margin-left: 80px;
 }
 
+#signup-name {
+  width: 400px !important;
+  margin-left: 80px;
+}
+
 #login-password {
   width: 400px !important;
   margin-left: 80px;
@@ -109,7 +120,7 @@ h1 {
 
 #signup-sub-button {
   width: 100px !important;
-  margin-left: 250px;
+ 
 }
 
 img {
@@ -134,7 +145,7 @@ img {
 }
 
 .btn-div {
-  width: 14em;
+  width: 14em !important;
   height: auto;
   padding: 1em;
   float: left;
@@ -155,6 +166,10 @@ img {
         margin-top: 0;
     }
     #nav-link3 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #nav-link4 {
         margin-left: 0;
         margin-top: 0;
     }
