@@ -9,21 +9,670 @@
       "website": "zunistreetbrewing.com"
     },
     {
-        "name": "Odell Brewing RiNo Brewhouse",
-        "location": "2945 Larimer St. Denver, CO 80205",
-        "city_name": "Denver",
-        "phone_number": "720-795-7862",
-        "food": "no",
-        "outdoor_seating": "yes",
-        "website": "www.odellbrewing.com/taproom-denver"
-      },
-      {
-        "name": "Dos Luces",
-        "location": "1236 South Broadway Denver, CO 80210",
-        "city_name": "Denver",
-        "phone_number": "720-379-7763",
-        "food": "yes",
-        "outdoor_seating": "no",
-        "website": "www.dosluces.com"
-      }
+      "name": "Odell Brewing RiNo Brewhouse",
+      "location": "2945 Larimer St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-795-7862",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.odellbrewing.com/taproom-denver"
+    },
+    {
+      "name": "Dos Luces",
+      "location": "1236 South Broadway Denver, CO 80210",
+      "city_name": "Denver",
+      "phone_number": "720-379-7763",
+      "food": "yes",
+      "outdoor_seating": "no",
+      "website": "www.dosluces.com"
+    },
+    {
+      "name": "Denver Beer Company (Downing St)",
+      "location": "2425 S Downing St. Denver, CO 80210",
+      "city_name": "Denver",
+      "phone_number": "303-433-2739",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "denverbeerco.com"
+    },
+    {
+      "name": "Bruz Off Fax",
+      "location": "1495 York St. Suite 101 Denver , CO 80206",
+      "city_name": "Denver",
+      "phone_number": "303-997-5144",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.bruzbeers.com"
+    },
+    {
+      "name": "Altitude Brewing & Supply",
+      "location": "2801 Walnut St. Unit C Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "303-292-2739",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "www.altitudebrew.com"
+    },
+    {
+      "name": "Odell Brewing Sloan’s Lake Brewhouse",
+      "location": "1625 Perry St. Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "970-498-9070",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.odellbrewing.com/locations/sloans-lake-brewhouse/"
+    },
+    {
+      "name": "Odell Brewing RiNo Brewhouse",
+      "location": "2945 Larimer St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-795-7862",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.odellbrewing.com/taproom-denver"
+    },
+    {
+      "name": "Colorado Sake Co.",
+      "location": "3559 Larimer St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-449-6963",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "www.Coloradosakeco.com"
+    },
+    {
+      "name": "Blue Tile Brewing",
+      "location": "1609 E 58th St. Unit G Denver, CO 80216",
+      "city_name": "Denver",
+      "phone_number": "720-242-8384",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": null
+    },
+    {
+      "name": "14er Brewing & Beer Garden",
+      "location": "3120 Blake St. Unit C Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-773-1437",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.14erbrewing.com/"
+    },
+    {
+      "name": "Cervecería Colorado",
+      "location": "1635 Platte St. Denver, CO 80211",
+      "city_name": "Denver",
+      "phone_number": "720-279-8248",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.cerveceriacolorado.com"
+    },
+    {
+      "name": "Counter Culture Brewery & Grille",
+      "location": "205 E 7th Ave. Denver, CO 80203",
+      "city_name": "Denver",
+      "phone_number": "720-638-8786",
+      "food": "yes",
+      "outdoor_seating": "no",
+      "website": "www.counterculturebrewery.com/"
+    },
+    {
+      "name": "Burns Family Artisan Ales",
+      "location": "2505 W 2nd Ave. Unit 13 Denver, CO 80219",
+      "city_name": "Denver",
+      "phone_number": "720-693-9099",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "burnsalesdenver.com"
+    },
+    {
+      "name": "The Empourium Brewing Company",
+      "location": "4385 W 42nd Ave. Denver, CO 80212",
+      "city_name": "Denver",
+      "phone_number": "720-361-2973",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "theempourium.com"
+    },
+    {
+      "name": "River North Brewery (RiNo)",
+      "location": "3400 Blake St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-236-8260",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.rivernorthbrewery.com"
+    },
+    {
+      "name": "Long Table Brewhouse",
+      "location": "2895 Fairfax St. Denver, CO 80207",
+      "city_name": "Denver",
+      "phone_number": "720-433-0771",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.lngtbl.com"
+    },
+    {
+      "name": "FlyteCo Brewing",
+      "location": "4499 W 38th Ave. Ste 101 Denver, CO 80212",
+      "city_name": "Denver",
+      "phone_number": "720-772-7319",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "flyteco.beer"
+    },
+    {
+      "name": "Tom’s Urban Diner & Tivoli Brewery",
+      "location": "8300 Peña Blvd. Main Terminal Denver, CO 80249",
+      "city_name": "Denver",
+      "phone_number": "303-342-6930",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "tomsurban.com/denver/"
+    },
+    {
+      "name": "Novel Strand Brewing Company",
+      "location": "305 W 1st Ave. Denver, CO 80223",
+      "city_name": "Denver",
+      "phone_number": "720-949-0246",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.novelstrand.com/"
+    },
+    {
+      "name": "Raices Brewing Company",
+      "location": "2060 W Colfax Ave. Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "720-295-2437",
+      "food": null,
+      "outdoor_seating": "no",
+      "website": "www.raicesbrewing.com"
+    },
+    {
+      "name": "The Grateful Gnome Sandwich Shoppe & Brewery",
+      "location": "4369 Stuart St. Denver, CO 80212",
+      "city_name": "Denver",
+      "phone_number": "720–598-6863",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.thegratefulgnome.com"
+    },
+    {
+      "name": "Banded Oak Brewing Company",
+      "location": "470 Broadway Denver, CO 80203",
+      "city_name": "Denver",
+      "phone_number": "720-479-8033",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "bandedoakbrewing.com/"
+    },
+    {
+      "name": "10 Barrel Brewing Company",
+      "location": "2620 Walnut St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-379-7763",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "10barrel.com"
+    },
+    {
+      "name": "Crazy Mountain Brewing Company",
+      "location": "471 Kalamath St. Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "970-498-9070",
+      "food": "no",
+      "outdoor_seating": null,
+      "website": "www.crazymountainbrewery.com"
+    },
+    {
+      "name": "Woods Boss Brewing",
+      "location": "2200 California St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-795-7862",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "woodsbossbrewing.com"
+    },
+    {
+      "name": "Black Project Spontaneous & Wild Ales",
+      "location": "1290 S Broadway Denver, CO 80210",
+      "city_name": "Denver",
+      "phone_number": "720-379-7763",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "www.blackprojectbeer.com"
+    },
+    {
+      "name": "New Belgium Brewing – The Woods at The Source",
+      "location": "3350 Brighton Blvd. Denver, CO 80216",
+      "city_name": "Denver",
+      "phone_number": "970-498-9070",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.newbelgium.com/brewery/thesource/"
+    },
+    {
+      "name": "Bruz Beers",
+      "location": "1675 W 67th Ave. Suite 100 Denver, CO 80221",
+      "city_name": "Denver",
+      "phone_number": "303-650-2337",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "wwww.bruzbeers.com/"
+    },
+    {
+      "name": "Oasis Brewing Company",
+      "location": "3257 N Lowell Blvd. Denver, CO 80211",
+      "city_name": "Denver",
+      "phone_number": "303-586-4047",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.oasisbeer.com/"
+    },
+    {
+      "name": "Blue Moon Brewing Company (RiNo)",
+      "location": "3750 Chestnut Pl. Denver, CO 80216",
+      "city_name": "Denver",
+      "phone_number": "303-728-2337",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.bluemoonbrewingcompany.com/brewery"
+    },
+    {
+      "name": "Little Machine Beer",
+      "location": "2924 W 20th Ave. Denver, CO 80211",
+      "city_name": "Denver",
+      "phone_number": "303-284-7893",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.littlemachinebeer.com"
+    },
+    {
+      "name": "Great Divide Brewing: Barrel Bar",
+      "location": "1675 W 67th Ave. Suite 100 Denver, CO 80221",
+      "city_name": "Denver",
+      "phone_number": "303-296-9460",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.greatdivide.com/"
+    },
+    {
+      "name": "Briar Common Brewery + Eatery",
+      "location": "2298 Clay St. Denver, CO 80211",
+      "city_name": "Denver",
+      "phone_number": "720-470-3731",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.briarcommon.com/"
+    },
+    {
+      "name": "Spangalang Brewery",
+      "location": "2736 Welton St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "303-297-1276",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "spangalangbrewery.com/"
+    },
+    {
+      "name": "Call to Arms Brewing Company",
+      "location": "4526 Tennyson St. Denver, CO 80212",
+      "city_name": "Denver",
+      "phone_number": "720-328-8258",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.calltoarmsbrewing.com"
+    },
+    {
+      "name": "Bierstadt Lagerhaus",
+      "location": "2875 Blake St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-570-7824",
+      "food": "yes",
+      "outdoor_seating": "no",
+      "website": "bierstadtlager.com"
+    },
+    {
+      "name": "J. Moe’s Brew Pub",
+      "location": "7314 Washington St. Denver, CO 80229",
+      "city_name": "Denver",
+      "phone_number": "303-287-4824",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.jmoes.net"
+    },
+    {
+      "name": "Seedstock Brewery",
+      "location": "3610 W Colfax Ave. Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "720-476-7831",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "seedstockbrewery.com/"
+    },
+    {
+      "name": "Ratio Beerworks",
+      "location": "2920 Larimer St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "303-997-8288",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "ratiobeerworks.com"
+    },
+    {
+      "name": "Mockery Brewing",
+      "location": "3501 Delgany St. Denver, CO 80216",
+      "city_name": "Denver",
+      "phone_number": "303-953-2058",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "mockerybrewing.com/"
+    },
+    {
+      "name": "Lowdown Brewery + Kitchen",
+      "location": "800 Lincoln St. Denver, CO 80203",
+      "city_name": "Denver",
+      "phone_number": "720-524-8065",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.lowdownbrewery.com"
+    },
+    {
+      "name": "Grandma’s House",
+      "location": "1710 S Broadway Denver, CO 80210",
+      "city_name": "Denver",
+      "phone_number": "303-578-6754",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "www.grandmasbeer.co/"
+    },
+    {
+      "name": "Platt Park Brewing Company",
+      "location": "1875 S Pearl St. Denver, CO 80210",
+      "city_name": "Denver",
+      "phone_number": "303-993-4002",
+      "food": "no",
+      "outdoor_seating": null,
+      "website": "gplattparkbrewing.com/"
+    },
+    {
+      "name": "Comrade Brewing Company",
+      "location": "7667 E Iliff Ave. Unit F Denver, CO 80231",
+      "city_name": "Denver",
+      "phone_number": "720-748-0700",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "www.comradebrewing.com/"
+    },
+    {
+      "name": "Chain Reaction Brewing",
+      "location": "902 S Lipan St. Denver, CO 80223",
+      "city_name": "Denver",
+      "phone_number": "303-941-0732",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "chainreactionbrewingco.com/"
+    },
+    {
+      "name": "Cerebral Brewing",
+      "location": "1477 N Monroe St. Denver, CO 80206",
+      "city_name": "Denver",
+      "phone_number": "303-927-7365",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "cerebralbrewing.com/"
+    },
+    {
+      "name": "Baere Brewing Company",
+      "location": "1505 Ogden St. Denver, CO 80218",
+      "city_name": "Denver",
+      "phone_number": "720-214-5170",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "www.baerebrewing.com/"
+    },
+    {
+      "name": "Alpine Dog Brewing Company",
+      "location": "3845 Lipan St. Denver, CO 80211",
+      "city_name": "Denver",
+      "phone_number": "720-441-4735",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "alpinedogbrewery.com"
+    },
+    {
+      "name": "Wynkoop Brewing Company",
+      "location": "1634 18th St. Denver, CO 80202",
+      "city_name": "Denver",
+      "phone_number": "303-297-2700",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.wynkoop.com"
+    },
+    {
+      "name": "Vine Street Pub & Brewery",
+      "location": "1700 Vine St. Denver, CO 80206",
+      "city_name": "Denver",
+      "phone_number": "303-388-2337",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "mountainsunpub.com/"
+    },
+    {
+      "name": "TRVE Brewing Company Taproom",
+      "location": "227 Broadway Unit 101 Denver, CO 80203",
+      "city_name": "Denver",
+      "phone_number": "303-351-1021",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "trvebrewing.com/"
+    },
+    {
+      "name": "Tivoli Brewing Company",
+      "location": "900 Auraria Pkwy. Ste. 240 Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "720-458-5885",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "tivolibrewingco.com/"
+    },
+    {
+      "name": "Strange Craft Beer Company",
+      "location": "1330 Zuni St Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "720-985-2337",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "strangecraft.com/"
+    },
+    {
+      "name": "Station 26 Brewing Company",
+      "location": "7045 E 38th Ave. Denver, CO 80207",
+      "city_name": "Denver",
+      "phone_number": "303-333-1825",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.station26brewing.co/"
+    },
+    {
+      "name": "Rock Bottom Brewery (16th St Mall – Denver)",
+      "location": "1001 16th St. Suite 100 A Denver, CO 80202",
+      "city_name": "Denver",
+      "phone_number": "303-534-7616",
+      "food": "yes",
+      "outdoor_seating": null,
+      "website": "www.rockbottom.com/"
+    },
+    {
+      "name": "River North Brewery",
+      "location": "6021 Washington St. Unit A Denver, CO 80216",
+      "city_name": "Denver",
+      "phone_number": "303-296-2617",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "rivernorthbrewery.com/"
+    },
+    {
+      "name": "Renegade Brewing Company",
+      "location": "925 W 9th Ave. Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "720-401-4089",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "renegadebrewing.com/"
+    },
+    {
+      "name": "Prost Brewing Company",
+      "location": "2540 19th St. Denver, CO 80211",
+      "city_name": "Denver",
+      "phone_number": "303-729-1175",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.prostbrewing.com"
+    },
+    {
+      "name": "Pints Pub Brewery & Freehouse",
+      "location": "221 W 13th Ave. Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "303-534-7543",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.pintspub.com/"
+    },
+    {
+      "name": "Our Mutual Friend Brewing Company",
+      "location": "2810 Larimer St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "303-296-3441",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.omfmb.com/"
+    },
+    {
+      "name": "Jagged Mountain Craft Brewery",
+      "location": "1139 20th St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-689-2337",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.jaggedmountainbrewery.com/"
+    },
+    {
+      "name": "Hogshead Brewery",
+      "location": "4430 W 29th Ave. Denver, CO 80212",
+      "city_name": "Denver",
+      "phone_number": "303-495-3105",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.hogshead54.com"
+    },
+    {
+      "name": "Great Divide Brewing Company",
+      "location": "2201 Arapahoe St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "303-296-9460",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "greatdivide.com"
+    },
+    {
+      "name": "Epic Brewing Company",
+      "location": "3001 Walnut St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "720-539-7410",
+      "food": "no",
+      "outdoor_seating": null,
+      "website": "www.epicbrewing.com"
+    },
+    {
+      "name": "Diebolt Brewing Company",
+      "location": "3855 Mariposa St. Denver, CO 80211",
+      "city_name": "Denver",
+      "phone_number": "918-625-9038",
+      "food": "no",
+      "outdoor_seating": "no",
+      "website": "dieboltbrewing.com/"
+    },
+    {
+      "name": "Denver Chophouse & Brewery",
+      "location": "1735 19th St. Suite 100 Denver, CO 80202",
+      "city_name": "Denver",
+      "phone_number": "3303-296-0800",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.denverchophouse.com/"
+    },
+    {
+      "name": "Denver Beer Company",
+      "location": "1695 Platte St. Denver, CO 80202",
+      "city_name": "Denver",
+      "phone_number": "303-433-2739",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "denverbeerco.com"
+    },
+    {
+      "name": "De Steeg Brewing",
+      "location": "4342 Tennyson St. Denver, CO 80212",
+      "city_name": "Denver",
+      "phone_number": "303-484-9698",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "desteegbrewing.com"
+    },
+    {
+      "name": "Crooked Stave Artisan Beer Project",
+      "location": "1441 W 46th Ave. Unit 19 Denver, CO 80211",
+      "city_name": "Denver",
+      "phone_number": "720-508-3292",
+      "food": "no",
+      "outdoor_seating": null,
+      "website": "www.crookedstave.com"
+    },
+    {
+      "name": "Copper Kettle Brewing Company",
+      "location": "1338 S Valentia St. Unit 100 Denver, CO 80247",
+      "city_name": "Denver",
+      "phone_number": "720-443-2522",
+      "food": "no",
+      "outdoor_seating": "yes",
+      "website": "www.copperkettledenver.com/"
+    },
+    {
+      "name": "Bull & Bush Pub & Brewery",
+      "location": "4700 Cherry Creek Drive South Denver, CO 80246",
+      "city_name": "Denver",
+      "phone_number": "03-759-0333",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "bullandbush.com/"
+    },
+    {
+      "name": "The Sandlot Brewery",
+      "location": "2145 Blake St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "303-312-2553",
+      "food": "yes",
+      "outdoor_seating": null,
+      "website": "www.sandlotbrewery.com/"
+    },
+    {
+      "name": "Black Sky Brewery",
+      "location": "490 Santa Fe Dr. Denver, CO 80204",
+      "city_name": "Denver",
+      "phone_number": "720-708-5816",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "blackskybrewing.com"
+    },
+    {
+      "name": "Black Shirt Brewing Company",
+      "location": "3719 Walnut St. Denver, CO 80205",
+      "city_name": "Denver",
+      "phone_number": "303-993-2799",
+      "food": "yes",
+      "outdoor_seating": "yes",
+      "website": "www.blackshirtbrewingco.com"
+    }
+
 ]

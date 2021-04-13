@@ -15,11 +15,11 @@ Info.init({
     allowNull: false,
   },
   name: {
-    type: DataTypes.STRING,
+    type: DataTypes.STRING(255),
     allowNull: false,
   },
   location: {
-    type: DataTypes.STRING(60),
+    type: DataTypes.STRING(255),
     allowNull: false,
   },
   phone_number: {
@@ -32,7 +32,7 @@ Info.init({
     type: DataTypes.STRING(3),
   },
   website: {
-    type: DataTypes.STRING(50),
+    type: DataTypes.STRING(255),
   },
 
   
