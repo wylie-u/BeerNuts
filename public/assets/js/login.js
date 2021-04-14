@@ -3,13 +3,12 @@ const loginFormHandler = async (event) => {
 
   const email = document.querySelector('#login-email').value.trim();
   const password = document.querySelector('#login-password').value.trim();
-  
+
   if (email && password) {
     const response = await fetch('/api/users/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
-      
     });
 
     if (response.ok) {
@@ -27,23 +26,13 @@ const signupFormHandler = async () => {
   const password = document.querySelector('#signup-password').value.trim();
   // add username to this if
   if (email && password) {
-    console.log(JSON.stringify({ email, password }));
     const response = await fetch('/api/users', {
-      
       method: 'POST',
-      
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, password }),
-      // body: {
-      //   name: 'MR DUDE',
-      //   email: 'fakeemail@gmail.com',
-      //   password: 'testpassword123',
-      // },
-      
     });
-    console.log(response)
+    console.log(response);
     if (response.ok) {
-    
       // document.location.replace('/profile.html');
       console.log('Response OK');
     } else {
@@ -78,7 +67,7 @@ subBtn.addEventListener('submit', handleForm);
 // function handlerForm(event){
 //   event.preventDefault();
 //   alert("clicked");
-  
+
 //   loginFormHandler();
 // }
 

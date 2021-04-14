@@ -3,9 +3,11 @@ let breweryTitle = document.getElementById('brewery-title');
 let breweryInfoList = document.getElementById('brewery-info-list');
 let breweryBtnLink = document.getElementById('brewery-link');
 
+// Variable for Drop down List
+let breweryDropDown = document.getElementById('brewery-drop-down');
 
-// Variable for all buttons
-// let breweryBtn = document.querySelectorAll('.brewery-button');
+// Api URL as variable
+const api_url = '/api/brewery';
 
 // Fetch function to our api using data-id from whichever button was clicked
 function getBreweryData(id) {
@@ -52,18 +54,49 @@ function addHandler() {
 
 addHandler();
 
-const api_url = 
-      "http://localhost:3001/api/brewery";
-  
+// Function to print brewery to dropdown list
+const getList = (breweryData) => {
+  for (let i = 0; i < breweryData.length; i++) {
+    const breweryDataSingle = breweryData[i];
+    const dataId = breweryData[i].id;
+    const breweryName = breweryData[i].name;
+    const dropDownItem = `<a class="dropdown-item" href="#" data-id="${dataId}">${breweryName}</a>`;
+    // printList(dropDownItem, breweryDataSingle);
+    const newLink = document.createElement('a');
+    newLink.textContent = breweryName;
+    newLink.classList.add('dropdown-item');
+    newLink.setAttribute('data-id', dataId);
+    breweryDropDown.appendChild(newLink);
+  }
+  addListHandler();
+};
+
+const printList = (item, data) => {
+  console.log(item);
+  breweryDropDown.append(item);
+  console.log(data);
+};
+
+// Adds event listener to every brewery list item, passes data-id to fetch function
+function addListHandler() {
+  let breweryLi = document.querySelectorAll('.dropdown-item');
+  breweryLi.forEach((element) => {
+    let breweryLiId = element.getAttribute('data-id');
+    element.addEventListener('click', function () {
+      getBreweryData(breweryLiId);
+      console.log('clicked');
+    });
+  });
+}
+
 // Defining async function
 async function getapi(url) {
-    
-    // Storing response
-    const response = await fetch(url);
-    
-    // Storing data in form of JSON
-    var data = await response.json();
-    console.log(data);
-    
+  // Storing response
+  const response = await fetch(url);
+
+  // Storing data in form of JSON
+  var data = await response.json();
+  console.log(data);
+  getList(data);
 }
 getapi(api_url);
