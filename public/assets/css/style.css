@@ -134,7 +134,9 @@ img {
   border: 2px;
   border-radius: 1em;
   padding: 2em;
+  margin-top: 6em;
   margin-bottom: 20em;
+  height: 40em;
   /* height: max-content; */
 }
 
@@ -193,4 +195,12 @@ img {
 
 .dropdown-item {
   cursor: pointer;
+}
+
+
+.dropdown-menu {
+  max-height:450px; 
+  overflow:auto; 
+  width:400px;
+  display: contents;
 }
