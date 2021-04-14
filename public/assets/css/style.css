@@ -190,3 +190,7 @@ img {
 .card-text li {
   list-style-type: none;
 }
+
+.dropdown-item {
+  cursor: pointer;
+}

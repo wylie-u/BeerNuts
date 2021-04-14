@@ -56,7 +56,7 @@ addHandler();
 
 // Function to print brewery to dropdown list
 const getList = (breweryData) => {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < breweryData.length; i++) {
     const breweryDataSingle = breweryData[i];
     const dataId = breweryData[i].id;
     const breweryName = breweryData[i].name;
@@ -68,6 +68,7 @@ const getList = (breweryData) => {
     newLink.setAttribute('data-id', dataId);
     breweryDropDown.appendChild(newLink);
   }
+  addListHandler();
 };
 
 const printList = (item, data) => {
@@ -75,6 +76,18 @@ const printList = (item, data) => {
   breweryDropDown.append(item);
   console.log(data);
 };
+
+// Adds event listener to every brewery list item, passes data-id to fetch function
+function addListHandler() {
+  let breweryLi = document.querySelectorAll('.dropdown-item');
+  breweryLi.forEach((element) => {
+    let breweryLiId = element.getAttribute('data-id');
+    element.addEventListener('click', function () {
+      getBreweryData(breweryLiId);
+      console.log('clicked');
+    });
+  });
+}
 
 // Defining async function
 async function getapi(url) {
