@@ -4,7 +4,7 @@ let breweryInfoList = document.getElementById('brewery-info-list');
 let breweryBtnLink = document.getElementById('brewery-link');
 
 // Variable for Drop down List
-let breweryDropDown = document.getElementById('brewery-drop-down');
+let breweryDropDown = document.querySelector('#brewery-drop-down');
 
 // Api URL as variable
 const api_url = '/api/brewery';

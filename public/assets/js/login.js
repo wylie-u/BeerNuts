@@ -1,6 +1,6 @@
-const loginFormHandler = async (event) => {
-  event.preventDefault();
-
+const loginFormHandler = async () => {
+  //event.preventDefault();
+  // Collect values from the login form
   const email = document.querySelector('#login-email').value.trim();
   const password = document.querySelector('#login-password').value.trim();
 
@@ -9,13 +9,18 @@ const loginFormHandler = async (event) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
-    });
+    }).then(function () {
+      document.location.replace('/profile');
+      alert('Hey');
+      //window.location.href = '/profile';
+      console.log('responded ok');
 
-    if (response.ok) {
-      document.location.replace('/');
-    } else {
-      alert(response.statusText);
-    }
+      if (response.ok) {
+        console.log('responded ok');
+      } else {
+        alert(response.statusText);
+      }
+    });
   }
 };
 const signupFormHandler = async () => {
@@ -24,6 +29,11 @@ const signupFormHandler = async () => {
   const name = document.querySelector('#signup-name').value.trim();
   const email = document.querySelector('#signup-email').value.trim();
   const password = document.querySelector('#signup-password').value.trim();
+
+  console.log({ email });
+  console.log({ name });
+  console.log({ password });
+  console.log(JSON.stringify({ name, email, password }));
   // add username to this if
   if (email && password) {
     const response = await fetch('/api/users', {
@@ -64,9 +74,10 @@ subBtn.addEventListener('submit', handleForm);
 // //login function
 // let loginBtn = document.querySelector('.login-form');
 
-// function handlerForm(event){
+// function handlerForm(event) {
 //   event.preventDefault();
-//   alert("clicked");
+//   alert('clicked');
+//   console.log('test');
 
 //   loginFormHandler();
 // }
