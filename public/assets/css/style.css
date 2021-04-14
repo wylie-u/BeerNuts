@@ -136,6 +136,7 @@ img {
   padding: 2em;
   margin-top: 6em;
   margin-bottom: 20em;
+  height: 40em;
   /* height: max-content; */
 }
 
@@ -198,8 +199,8 @@ img {
 
 
 .dropdown-menu {
-  max-height:190px; 
+  max-height:450px; 
   overflow:auto; 
-  width:300px;
+  width:400px;
   display: contents;
 }
