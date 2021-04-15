@@ -19,9 +19,6 @@
                 <li class="nav-item">
                     <a class="nav-link" id="nav-link4" href="/About">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link4" href="/profile">Profile</a>
-                </li>
             </ul>
         </div>
     </nav>
@@ -49,55 +46,68 @@
                                     <label for="">Phone Number</label>
                                     <small id="examplePh" class="form-text text-muted">ex. 303-555-0000</small>
                                     <input type="tel" class="form-control" id="phone_number">
-                                       <div class="form-group">
-                                    <label for="addwebsite">Website</label>
-                                    <input type="text" class="form-control" id="website">
+                                    <div class="form-group">
+                                        <label for="addwebsite">Website</label>
+                                        <input type="text" class="form-control" id="website">
 
-                                </div>
-                                <div>
-                                    <p>Do they serve food?</p>
-
-                                    <div>
-                                        <input type="radio" id="food" name="food" value="yes" checked>
-                                        <label for="yes">Yes</label>
-                                    </div>
-
-                                    <div>
-                                        <input type="radio" id="food" name="food" value="no">
-                                        <label for="no">No</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="food" name="food" value="null">
-                                        <label for="notSure">Not sure</label>
-                                    </div>
-                                </div>
-                                <div>
-                                    <p>Do they have outdoor seating?</p>
+                                        <p>Do they serve food?</p>
 
+                                        <div>
+                                            <input type="radio" id="food" name="food" value="yes" checked>
+                                            <label for="yes">Yes</label>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" id="food" name="food" value="no">
+                                            <label for="no">No</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="food" name="food" value="null">
+                                            <label for="notSure">Not sure</label>
+                                        </div>
+                                    </div>
                                     <div>
-                                        <input type="radio" id="outdoor_seating" name="outdoor" value="yes" checked>
-                                        <label for="yes">Yes</label>
-                                    </div>
+                                        <p>Do they have outdoor seating?</p>
 
-                                    <div>
-                                        <input type="radio" id="outdoor_seating" name="outdoor" value="no">
-                                        <label for="no">No</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="outdoor_seating" name="outdoor" value="null">
-                                        <label for="notSure">Not sure</label>
-                                    </div>
+                                        <div>
+                                            <input type="radio" id="outdoor_seating" name="outdoor" value="yes" checked>
+                                            <label for="yes">Yes</label>
+                                        </div>
+
+                                        <div>
+                                            <input type="radio" id="outdoor_seating" name="outdoor" value="no">
+                                            <label for="no">No</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="outdoor_seating" name="outdoor" value="null">
+                                            <label for="notSure">Not sure</label>
+                                        </div>
 
 
-                                </div>
-                                <button type="submit" id="submitNewBrewery" class="btn btn-dark">Submit</button>
+                                    </div>
+                                    <button type="submit" id="submitNewBrewery" class="btn btn-dark">Submit</button>
                     </form>
+
+                    <div id="modal">
+                        <div class="modalcontent">
+
+
+                            <h1>Thank you for your submission!</h1>
+
+                            <a class="btn btn-dark" id="goHome" href="/">Go Home</a>
+                            <a class="btn btn-dark" id="addAnother" href="/addBrewery">Add another brewery</a>
+
+                        </div>
+                    </div>
                 </div>
                 <!-- JQuery Link -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                 <!-- Custom Script Link -->
-                {{!-- <script src="/assets/js/script.js"></script> --}}
-                 <script src="/assets/js/addbrewery.js"></script>
+                {{!--
+                <script src="/assets/js/script.js"></script> --}}
+                <script src="/assets/js/addbrewery.js"></script>
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                     crossorigin="anonymous"></script>

@@ -47,8 +47,10 @@ body {
 }
 
 h1 {
+  padding-top: 20px;
   text-align: center;
-  color: black;
+  color: whitesmoke;
+  text-shadow: 3px 3px black;
 }
 
 .form-inline {
@@ -134,7 +136,7 @@ img {
   border: 2px;
   border-radius: 1em;
   padding: 2em;
-  margin-top: 6em;
+  margin-top: 3em;
   margin-bottom: 20em;
   height: 40em;
   /* height: max-content; */
@@ -199,7 +201,7 @@ img {
 
 
 .dropdown-menu {
-  max-height:450px; 
+  max-height:300px; 
   overflow:auto; 
   width:400px;
   display: contents;
@@ -207,8 +209,17 @@ img {
 
 .addBreweryText {
   text-align: center;
-  padding-top: 60px;
-  font-size: 50px;
+  margin-top: 100px;
+  margin-left: 300px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+}
+
+
+h2{
+  font-weight: bolder !important;
+  color: black;
 }
 
 #city_name {
