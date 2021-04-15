@@ -100,3 +100,38 @@ async function getapi(url) {
   getList(data);
 }
 getapi(api_url);
+
+// var button= $("#submitNewBrewery")
+// console.log(button)
+// $("#submitNewBrewery").submit(function() {
+ 
+//    const cityName= document.querySelector("#city_name").value
+//    const breweryName= document.querySelector("#name").value
+//    const location= document.querySelector("#location").value
+//    const phNumber= document.querySelector("#phone_number").value
+//    const food= document.querySelector("#food").value
+//    const outdoor= document.querySelector("#outdoor_seating").value
+
+
+
+//   return fetch("http://localhost:3001/brewery", 
+//       { 
+  
+//       // Adding method type
+  
+//       method: "POST", 
+  
+//       // Adding body or contents to send 
+      
+  
+//       body: JSON.stringify({
+//           "city_name" : cityName,
+//           "name" : breweryName,
+//           "location": location,
+//           "phone_number": phNumber,
+//           "food": food,
+//           "outdoor_seating": outdoor
+//       })
+//   });
+  
+//   })

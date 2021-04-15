@@ -204,3 +204,48 @@ img {
   width:400px;
   display: contents;
 }
+
+.addBreweryText {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 50px;
+}
+
+#city_name {
+  width: 400px !important;
+  margin-left: 80px;
+}
+#location {
+  width: 400px !important;
+  margin-left: 80px;
+}
+#name {
+  width: 400px !important;
+  margin-left: 80px;
+}
+
+#phone_number {
+  width: 400px !important;
+  margin-left: 80px;
+}
+
+#website {
+  width: 400px !important;
+  margin-left: 80px;
+}
+
+#addBrewery {
+
+  height: 800px !important;
+
+}
+.card-addBrewery {
+  margin-top: 40px !important;
+  margin-left: 260px !important;
+  margin-bottom: 50px !important;
+  
+}
+
+#submitNewBrewery {
+  margin-top: 20px;
+}
