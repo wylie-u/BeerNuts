@@ -83,3 +83,5 @@ function addListHandler() {
     });
   });
 }
+
+//Add to favorites functionality
