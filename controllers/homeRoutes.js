@@ -60,7 +60,13 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
-
+router.get('/addBrewery', (req, res) => {
+  
+  
+  // res.sendFile(path.join(__dirname, '../views/addBrewery.html'));
+  // method below is for handlebars
+  res.render('addBrewery');
+});
 
 // router.get('/', async (req, res) => {
 //   try {
