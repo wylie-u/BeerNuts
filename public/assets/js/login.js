@@ -1,74 +1,38 @@
-const loginFormHandler = async (event) => {
-  event.preventDefault();
-
+const loginFormHandler = async () => {
+  console.log('Function Fired');
+  //event.preventDefault();
+  // Collect values from the login form
   const email = document.querySelector('#login-email').value.trim();
   const password = document.querySelector('#login-password').value.trim();
 
-  if (email && password) {
+    if (email && password) {
+    // Send a POST request to the API endpoint
     const response = await fetch('/api/users/login', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
-    });
-
-    if (response.ok) {
-      document.location.replace('/');
-    } else {
-      alert(response.statusText);
-    }
-  }
-};
-const signupFormHandler = async () => {
-  console.log('Function Fired');
-
-  const name = document.querySelector('#signup-name').value.trim();
-  const email = document.querySelector('#signup-email').value.trim();
-  const password = document.querySelector('#signup-password').value.trim();
-  // add username to this if
-  if (email && password) {
-    const response = await fetch('/api/users', {
-      method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, password }),
     });
-    console.log(response);
+
     if (response.ok) {
-      // document.location.replace('/profile.html');
-      console.log('Response OK');
+      alert('logged in!')
+      // If successful, redirect the browser to the profile page
+      document.location.replace('/profile');
     } else {
       alert(response.statusText);
     }
   }
 };
 
-// document
-//   .querySelector('.login-form')
-//   .addEventListener('submit', loginFormHandler);
 
-// document
-//   .querySelector('.signup-form')
-//   .addEventListener('submit', signupFormHandler);
+//login function
+let loginBtn = document.getElementById('login-form');
 
-// Getting the signup form (not the sub button) by ID
-let subBtn = document.getElementById('sign-up-form');
-
-// Prevents form default action, calls function to post user signup to database
-function handleForm(event) {
+function handlerForm(event) {``
   event.preventDefault();
-  signupFormHandler();
+  
+  console.log('test');
+
+  loginFormHandler();
 }
 
-// Event Listener for form submit
-subBtn.addEventListener('submit', handleForm);
-
-// //login function
-// let loginBtn = document.querySelector('.login-form');
-
-// function handlerForm(event){
-//   event.preventDefault();
-//   alert("clicked");
-
-//   loginFormHandler();
-// }
-
-// loginBtn.addEventListener('submit', handlerForm);
+loginBtn.addEventListener('submit', handlerForm);

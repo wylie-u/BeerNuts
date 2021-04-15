@@ -3,8 +3,10 @@ const { User } = require('../../models');
 
 // sign up
 router.post('/', async (req, res) => {
-  try {// data will be retreived here for new user info
+  try {
+    // data will be retreived here for new user info
     const userData = await User.create(req.body);
+    console.log('data', userData);
 
     req.session.save(() => {
       req.session.user_id = userData.id;
@@ -13,15 +15,15 @@ router.post('/', async (req, res) => {
       res.status(200).json(userData);
     });
   } catch (err) {
+    console.log(err);
     res.status(400).json(err);
   }
 });
 
 router.post('/login', async (req, res) => {
-  
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
-    console.log('user', userData)
+    console.log('user', userData);
     if (!userData) {
       res
         .status(400)
@@ -53,6 +55,7 @@ router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
+      res.json({ user: userData, message: 'You are now logged in!' });
     });
   } else {
     res.status(404).end();
