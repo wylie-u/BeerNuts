@@ -8,7 +8,7 @@ function handleForm2(event) {
   }
 
   const newFormHandler = async (event) => {
-    // event.preventDefault();
+    event.preventDefault();
   
     const cityName= document.querySelector("#city_name").value.trim();
     const breweryName= document.querySelector("#name").value.trim();
@@ -34,8 +34,14 @@ function handleForm2(event) {
           'Content-Type': 'application/json',
         },
       });
+      console.log("successful")
   
     }
+    // add .show/hide here
+    
   };
 
   buttonsub.addEventListener('submit', newFormHandler);
+
+
+ 
