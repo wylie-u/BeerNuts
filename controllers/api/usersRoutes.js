@@ -55,7 +55,7 @@ router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
-      console.log('logged out successfully')
+      res.json({ user: userData, message: 'You are now logged in!' });
     });
   } else {
     res.status(404).end();
