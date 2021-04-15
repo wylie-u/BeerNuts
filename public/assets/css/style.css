@@ -201,7 +201,7 @@ img {
 
 
 .dropdown-menu {
-  max-height:300px; 
+  max-height:400px; 
   overflow:auto; 
   width:400px;
   display: contents;
