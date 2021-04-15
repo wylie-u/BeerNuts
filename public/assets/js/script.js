@@ -1,13 +1,21 @@
 // Variables for Brewery Buttons - Testing with ID but we may want to get all buttons by class and sort from there to handle click events?
-let breweryTitle = document.getElementById('brewery-title');
-let breweryInfoList = document.getElementById('brewery-info-list');
-let breweryBtnLink = document.getElementById('brewery-link');
+var breweryTitle = document.getElementById('brewery-title');
+var breweryInfoList = document.getElementById('brewery-info-list');
+var breweryBtnLink = document.getElementById('brewery-link');
 
 // Variable for Drop down List
-let breweryDropDown = document.querySelector('#brewery-drop-down');
+var breweryDropDown = document.querySelector('#brewery-drop-down');
 
-// Api URL as variable
-const api_url = '/api/brewery';
+// Fetching All Brewery Data and passing to brewery list function
+async function getAllBreweries() {
+  // Storing response
+  const response = await fetch('/api/brewery');
+  // Storing data in form of JSON
+  var data = await response.json();
+  // Passing JSON to getList to display breweries.
+  getList(data);
+}
+getAllBreweries();
 
 // Fetch function to our api using data-id from whichever button was clicked
 function getBreweryData(id) {
@@ -18,19 +26,9 @@ function getBreweryData(id) {
     });
 }
 
-// //CityNameFetch
-// function getBreweryData(id) {
-//   fetch(`/api/brewery/${city_name}`)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       printCard(data);
-//     });
-// }
-
 // Print data onto the card
 function printCard(data) {
   let cardLink = breweryBtnLink;
-  console.log(data);
   breweryTitle.textContent = data.name;
   breweryInfoList.innerHTML = `<li>City: ${data.city_name}</li>
   <li>Address: ${data.location}</li>
@@ -55,7 +53,7 @@ function addHandler() {
 addHandler();
 
 // Function to print brewery to dropdown list
-const getList = (breweryData) => {
+function getList(breweryData) {
   for (let i = 0; i < breweryData.length; i++) {
     const breweryDataSingle = breweryData[i];
     const dataId = breweryData[i].id;
@@ -69,13 +67,11 @@ const getList = (breweryData) => {
     breweryDropDown.appendChild(newLink);
   }
   addListHandler();
-};
+}
 
-const printList = (item, data) => {
-  console.log(item);
+function printList(item, data) {
   breweryDropDown.append(item);
-  console.log(data);
-};
+}
 
 // Adds event listener to every brewery list item, passes data-id to fetch function
 function addListHandler() {
@@ -84,54 +80,6 @@ function addListHandler() {
     let breweryLiId = element.getAttribute('data-id');
     element.addEventListener('click', function () {
       getBreweryData(breweryLiId);
-      console.log('clicked');
     });
   });
 }
-
-// Defining async function
-async function getapi(url) {
-  // Storing response
-  const response = await fetch(url);
-
-  // Storing data in form of JSON
-  var data = await response.json();
-  console.log(data);
-  getList(data);
-}
-getapi(api_url);
-
-// var button= $("#submitNewBrewery")
-// console.log(button)
-// $("#submitNewBrewery").submit(function() {
- 
-//    const cityName= document.querySelector("#city_name").value
-//    const breweryName= document.querySelector("#name").value
-//    const location= document.querySelector("#location").value
-//    const phNumber= document.querySelector("#phone_number").value
-//    const food= document.querySelector("#food").value
-//    const outdoor= document.querySelector("#outdoor_seating").value
-
-
-
-//   return fetch("http://localhost:3001/brewery", 
-//       { 
-  
-//       // Adding method type
-  
-//       method: "POST", 
-  
-//       // Adding body or contents to send 
-      
-  
-//       body: JSON.stringify({
-//           "city_name" : cityName,
-//           "name" : breweryName,
-//           "location": location,
-//           "phone_number": phNumber,
-//           "food": food,
-//           "outdoor_seating": outdoor
-//       })
-//   });
-  
-//   })
