@@ -229,9 +229,14 @@ img {
   margin-left: 80px;
 }
 
+#website {
+  width: 400px !important;
+  margin-left: 80px;
+}
+
 #addBrewery {
 
-  height: 700px !important;
+  height: 800px !important;
 
 }
 .card-addBrewery {

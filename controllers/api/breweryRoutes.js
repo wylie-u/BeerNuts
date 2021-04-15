@@ -13,6 +13,7 @@ router.post('/', (req, res) => {
     phone_number: req.body.phone_number,
     food: req.body.food,
     outdoor_seating: req.body.outdoor_seating,
+    website: req.body.website,
 
   })
     .then((newBrewery) => {
