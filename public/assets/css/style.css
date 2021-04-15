@@ -197,18 +197,17 @@ img {
   cursor: pointer;
 }
 
-
 .dropdown-menu {
-  max-height:450px; 
-  overflow:auto; 
-  width:400px;
+  max-height: 450px;
+  overflow: auto;
+  width: 400px;
   display: contents;
 }
 
 .addBreweryText {
   text-align: center;
-  padding-top: 60px;
-  font-size: 50px;
+  padding-top: 180px;
+  font-size: 32px;
 }
 
 #city_name {
@@ -235,15 +234,12 @@ img {
 }
 
 #addBrewery {
-
   height: 800px !important;
-
 }
 .card-addBrewery {
   margin-top: 40px !important;
   margin-left: 260px !important;
   margin-bottom: 50px !important;
-  
 }
 
 #submitNewBrewery {

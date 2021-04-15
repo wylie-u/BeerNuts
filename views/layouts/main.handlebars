@@ -9,131 +9,22 @@
 <link href="https://fonts.googleapis.com/css?family=Russo One" rel="stylesheet" />
 
 <head>
-    <title>BeerNuts</title>
+    <title>BeerNuts - Find Your Spot</title>
 </head>
 {{{ body }}}
 {{!--
+<!-- Custom Script Link --> --}}
+<script src="/assets/js/script.js"></script>
+{{!-- Logout Script Link --}}
+<script src="/assets/js/logout.js"></script>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #232624 !important;">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" id="nav-link1" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link2" href="/login">Log in</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link3" href="/profile">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav-link4" href="/About">About</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row hero">
-            <h1>
-                Colorado has 428 breweries, and growing. Find your spot. Search by city,
-                or search by name of brewery.
-            </h1>
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" id="city-input" type="search" placeholder="Search"
-                    aria-label="Search" />
-            </form>
-            <button type="button" class="btn btn-dark" id="city-search-button" type="submit">
-                Search by city
-            </button>
-            <button type="button" class="btn btn-dark" id="name-search-button" type="submit">
-                Search brewery name
-            </button>
-        </div>
-        <div class="brewery-info">
-            <div class="row">
-                <h2>Get Brewery Info</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6 buttons-area">
-                    <div class="btn-div">
-                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" data-id="1" type="">
-                            Wild Provisions
-                        </button>
-                    </div>
-                    <div class="btn-div">
-                        <button type="button" class="brewery-button btn btn-dark btn-block" id="avery-btn" data-id="2"
-                            type="">
-                            Avery
-                        </button>
-                    </div>
-                    <div class="btn-div">
-                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" data-id="3" type="">
-                            Sanitas
-                        </button>
-                    </div>
-                    <div class="btn-div">
-                        <button type="button" class="brewery-button btn btn-dark btn-block" id="" data-id="4" type="">
-                            Zuni Street
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title" id="brewery-title">Brewery Placeholder</h5>
-                        </div>
-                        <div class="card-body" id="brewery-info-card">
-
-                            <ul class="card-text" id="brewery-info-list">
-                                <li>
-                                    City:
-                                </li>
-                                <li>
-                                    Address:
-                                </li>
-                                <li>
-                                    Phone Number:
-                                </li>
-                                <li>
-                                    Outdoor Seating:
-                                </li>
-                                <li>
-                                    Has Food:
-                                </li>
-                            </ul>
-                            <a href="" class="btn btn-dark" target="_blank" id="brewery-link">Go to Website</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div> --}}
-    <!-- JQuery Link -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Custom Script Link -->
-    <script src="/assets/js/script.js"></script>
-    {{!--
-    <script src="/assets/js/login.js"></script>
-    <script src="/assets/js/logout.js"></script> --}}
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+{{!-- Bootstrap bundle contains JQuery 3.5.1 --}}
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
