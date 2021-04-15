@@ -1,6 +1,29 @@
 const router = require('express').Router();
 const { Info } = require('../../models');
 
+
+
+router.post('/', (req, res) => {
+  // Use Sequelize's `create()` method to add a row to the table
+  // Similar to `INSERT INTO` in plain SQL
+  Info.create({
+    city_name: req.body.city_name,
+    name: req.body.name,
+    location: req.body.location,
+    phone_number: req.body.phone_number,
+    food: req.body.food,
+    outdoor_seating: req.body.outdoor_seating,
+
+  })
+    .then((newBrewery) => {
+      // Send the newly created row as a JSON object
+      res.json(newBrewery);
+    })
+    .catch((err) => {
+      res.json(err);
+    });
+});
+
 router.get('/', (req, res) => {
   Info.findAll({})
     .then((results) => {
