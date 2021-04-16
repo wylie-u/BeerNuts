@@ -184,9 +184,6 @@ img {
     width: 300px !important;
   }
 
-  #city-search-button {
-    margin-left: 0px;
-  }
   h1 {
     padding-top: 100px;
   }
@@ -204,6 +201,37 @@ img {
   }
   #login-sub-button {
     margin-left: 0px;
+  }
+
+  .card-signup {
+    margin-left: 0;
+    width: 320px !important;
+  }
+  #signup-name {
+    width: 275px !important;
+    margin-left: 5px;
+  }
+  #signup-email {
+    width: 275px !important;
+    margin-left: 5px;
+  }
+  #signup-password {
+    width: 275px !important;
+    margin-left: 5px;
+  }
+  #signup-sub-button {
+    margin-left: 0px;
+  }
+  .addBreweryText {
+    margin-left: 0px !important;
+  }
+  /* .card-submission {
+    margin-left: 0 !important;
+    width: 290px !important;
+  } */
+  .card-addBrewery {
+    margin-left: 0;
+    width: 320px !important;
   }
 }
 
@@ -269,6 +297,7 @@ h2{
 
 }
 .card-addBrewery {
+  width: 600px !important;
   margin-top: -250px !important;
   margin-left: 260px !important;
   margin-bottom: 50px !important;
