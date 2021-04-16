@@ -1,19 +1,27 @@
 var buttonSub = document.getElementById('addBrewery');
+var thanksRow = document.getElementById('thankyou-row');
+var addBrewRow = document.getElementById('add-brewery-row');
+var submitBreweryBtn = document.getElementById('submitNewBrewery');
 
 // subBtn.addEventListener('submit', handleForm);
-function handleForm2(event) {
-  event.preventDefault();
-  console.log('clicked here');
-  // newFormHandler();
-}
+// function handleForm2(event) {
+//   event.preventDefault();
+//   console.log('clicked here');
+//   // newFormHandler();
+// }
 
-$('#submitNewBrewery').click(function () {
-  $('.card-addBrewery').hide();
-});
+// $('#submitNewBrewery').click(function () {
+//   $('.card-addBrewery').hide();
+// });
+
+function hideForm() {
+  thanksRow.classList.remove('hide-form');
+  addBrewRow.classList.add('hide-form');
+}
+submitBreweryBtn.addEventListener('click', hideForm);
 
 const newFormHandler = async (event) => {
   event.preventDefault();
-  const thanksRow = document.getElementById('thankyou-row');
   const cityName = document.querySelector('#city_name').value.trim();
   const breweryName = document.querySelector('#name').value.trim();
   const location = document.querySelector('#location').value.trim();
@@ -41,7 +49,6 @@ const newFormHandler = async (event) => {
     console.log('successful');
   }
   // add .show/hide here
-  thanksRow.classList.add('hide-form');
 };
 
-buttonSub.addEventListener('submit', handleForm2);
+buttonSub.addEventListener('submit', newFormHandler);
