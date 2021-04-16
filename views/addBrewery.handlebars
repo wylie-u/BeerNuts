@@ -25,82 +25,100 @@
 
     <body>
         <div class="container">
-            <div class="card card-submission">
-                <div class="card-body">
-                    <p>Thank you for your submission!<br>
-                        Your brewery has been added to our database.</p>
-                    <a class="btn btn-dark" id="goHome" href="/">Go Home</a>
-                    <a class="btn btn-dark" id="addAnother" href="/addBrewery">Add another brewery</a>
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <div class="card card-submission">
+                        <div class="card-body">
+                            <p>Thank you for your submission!<br>
+                                Your brewery has been added to our database.</p>
+                            <a class="btn btn-dark" id="goHome" href="/">Go Home</a>
+                            <a class="btn btn-dark" id="addAnother" href="/addBrewery">Add another brewery</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8">
+                    <div class="card card-addBrewery" style="text-align: center;">
+                        <div class="card-body">
+                            <h5 class="card-title">Add a Brewery</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Please fill out the details of your favorite spot
+                            </h6>
+                            <form id="addBrewery">
+                                <div class="form-group">
+                                    <label for="addCity">City</label>
+                                    <input type="text" class="form-control" id="city_name">
+                                    <div class="form-group">
+                                        <label for="addBrewery">Brewery Name</label>
+                                        <input type="text" class="form-control" id="name">
+                                        <div class="form-group">
+                                            <label for="addAddress">Full Address</label>
+                                            <small id="exampleAddr" class="form-text text-muted">ex. 1234 S Main St.
+                                                Denver, CO
+                                                80001</small>
+                                            <input type="text" class="form-control" id="location">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Phone Number</label>
+                                            <small id="examplePh" class="form-text text-muted">ex. 303-555-0000</small>
+                                            <input type="tel" class="form-control" id="phone_number">
+                                            <div class="form-group">
+                                                <label for="addwebsite">Website</label>
+                                                <input type="text" class="form-control" id="website">
+
+                                            </div>
+                                            <div>
+                                                <p>Do they serve food?</p>
+
+                                                <div>
+                                                    <input type="radio" id="food" name="food" value="yes" checked>
+                                                    <label for="yes">Yes</label>
+                                                </div>
+
+                                                <div>
+                                                    <input type="radio" id="food" name="food" value="no">
+                                                    <label for="no">No</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="food" name="food" value="null">
+                                                    <label for="notSure">Not sure</label>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Do they have outdoor seating?</p>
+
+                                                <div>
+                                                    <input type="radio" id="outdoor_seating" name="outdoor" value="yes"
+                                                        checked>
+                                                    <label for="yes">Yes</label>
+                                                </div>
+
+                                                <div>
+                                                    <input type="radio" id="outdoor_seating" name="outdoor" value="no">
+                                                    <label for="no">No</label>
+                                                </div>
+                                                <div>
+                                                    <input type="radio" id="outdoor_seating" name="outdoor"
+                                                        value="null">
+                                                    <label for="notSure">Not sure</label>
+                                                </div>
+
+
+                                            </div>
+                                            <button type="submit" id="submitNewBrewery"
+                                                class="btn btn-dark">Submit</button>
+                            </form>
+
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="card card-addBrewery" style="text-align: center;">
-                <div class="card-body">
-                    <h5 class="card-title">Add a Brewery</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Please fill out the details of your favorite spot</h6>
-                    <form id="addBrewery">
-                        <div class="form-group">
-                            <label for="addCity">City</label>
-                            <input type="text" class="form-control" id="city_name">
-                            <div class="form-group">
-                                <label for="addBrewery">Brewery Name</label>
-                                <input type="text" class="form-control" id="name">
-                                <div class="form-group">
-                                    <label for="addAddress">Full Address</label>
-                                    <small id="exampleAddr" class="form-text text-muted">ex. 1234 S Main St. Denver, CO
-                                        80001</small>
-                                    <input type="text" class="form-control" id="location">
-                                </div>
-                                <div class="form-group">
-                                    <label for="">Phone Number</label>
-                                    <small id="examplePh" class="form-text text-muted">ex. 303-555-0000</small>
-                                    <input type="tel" class="form-control" id="phone_number">
-                                    <div class="form-group">
-                                        <label for="addwebsite">Website</label>
-                                        <input type="text" class="form-control" id="website">
 
-                                    </div>
-                                    <div>
-                                        <p>Do they serve food?</p>
-
-                                        <div>
-                                            <input type="radio" id="food" name="food" value="yes" checked>
-                                            <label for="yes">Yes</label>
-                                        </div>
-
-                                        <div>
-                                            <input type="radio" id="food" name="food" value="no">
-                                            <label for="no">No</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="food" name="food" value="null">
-                                            <label for="notSure">Not sure</label>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p>Do they have outdoor seating?</p>
-
-                                        <div>
-                                            <input type="radio" id="outdoor_seating" name="outdoor" value="yes" checked>
-                                            <label for="yes">Yes</label>
-                                        </div>
-
-                                        <div>
-                                            <input type="radio" id="outdoor_seating" name="outdoor" value="no">
-                                            <label for="no">No</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio" id="outdoor_seating" name="outdoor" value="null">
-                                            <label for="notSure">Not sure</label>
-                                        </div>
-
-
-                                    </div>
-                                    <button type="submit" id="submitNewBrewery" class="btn btn-dark">Submit</button>
-                    </form>
-
-
-                </div>
-                <!-- Custom Script Links -->
-                <script src="/assets/js/addbrewery.js"></script>
+        </div>
+        <!-- Custom Script Links -->
+        <script src="/assets/js/addbrewery.js"></script>
     </body>
