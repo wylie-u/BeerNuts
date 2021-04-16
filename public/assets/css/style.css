@@ -116,7 +116,7 @@ h1 {
 
 #login-sub-button {
   width: 100px !important;
-  margin-left: 250px;
+
 }
 
 #signup-sub-button {
@@ -190,7 +190,25 @@ img {
   h1 {
     padding-top: 100px;
   }
+  .card-login {
+    margin-left: 0;
+    width: 320px !important;
+  }
+  #login-email {
+    width: 275px !important;
+    margin-left: 5px;
+  }
+  #login-password {
+    width: 275px !important;
+    margin-left: 5px;
+  }
+  #login-sub-button {
+    margin-left: 0px;
+  }
 }
+
+
+
 .card-text li {
   list-style-type: none;
 }
@@ -251,12 +269,22 @@ h2{
 
 }
 .card-addBrewery {
-  margin-top: 40px !important;
+  margin-top: -250px !important;
   margin-left: 260px !important;
   margin-bottom: 50px !important;
+  z-index: 999;
   
 }
 
 #submitNewBrewery {
   margin-top: 20px;
+}
+
+.card-submission {
+  font-size: 30px;
+  text-align: center;
+  width: 500px;
+  margin-left: 310px;
+  margin-top: 40px;
+  z-index: 1;
 }

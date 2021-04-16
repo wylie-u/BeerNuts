@@ -7,6 +7,11 @@ function handleForm2(event) {
     breweryForm();
   }
 
+  $("#submitNewBrewery").click(function(){
+    $(".card-addBrewery").hide();
+    
+  });
+
   const newFormHandler = async (event) => {
     event.preventDefault();
   
@@ -43,5 +48,3 @@ function handleForm2(event) {
 
   buttonsub.addEventListener('submit', newFormHandler);
 
-
- 

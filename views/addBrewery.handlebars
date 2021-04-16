@@ -25,6 +25,15 @@
 
     <body>
         <div class="container">
+            <div class="card card-submission">
+                <div class="card-body">
+                    <p>Thank you for your submission!<br>
+                        Your brewery has been added to our database.</p>
+                    <a class="btn btn-dark" id="goHome" href="/">Go Home</a>
+                    <a class="btn btn-dark" id="addAnother" href="/addBrewery">Add another brewery</a>
+                </div>
+            </div>
+
             <div class="card card-addBrewery" style="width: 600px; text-align: center;">
                 <div class="card-body">
                     <h5 class="card-title">Add a Brewery</h5>
@@ -90,17 +99,7 @@
                                     <button type="submit" id="submitNewBrewery" class="btn btn-dark">Submit</button>
                     </form>
 
-                    <div id="modal">
-                        <div class="modalcontent">
 
-
-                            <h1>Thank you for your submission!</h1>
-
-                            <a class="btn btn-dark" id="goHome" href="/">Go Home</a>
-                            <a class="btn btn-dark" id="addAnother" href="/addBrewery">Add another brewery</a>
-
-                        </div>
-                    </div>
                 </div>
                 <!-- JQuery Link -->
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
