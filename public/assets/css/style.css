@@ -245,11 +245,10 @@ img {
   cursor: pointer;
 }
 
-
 .dropdown-menu {
-  max-height:400px; 
-  overflow:auto; 
-  width:400px;
+  max-height: 450px;
+  overflow: auto;
+  width: 400px;
   display: contents;
 }
 
@@ -262,8 +261,7 @@ img {
   color: black;
 }
 
-
-h2{
+h2 {
   font-weight: bolder !important;
   color: black;
 }
@@ -292,22 +290,24 @@ h2{
 }
 
 #addBrewery {
-
   height: 800px !important;
-
 }
 .card-addBrewery {
   width: 600px !important;
   margin-top: -250px !important;
   margin-left: 260px !important;
   margin-bottom: 50px !important;
+<<<<<<< HEAD
   z-index: 999;
   
+=======
+>>>>>>> abe59358d05af0a0791042ba7f6019d97e990c61
 }
 
 #submitNewBrewery {
   margin-top: 20px;
 }
+<<<<<<< HEAD
 
 .card-submission {
   font-size: 30px;
@@ -317,3 +317,5 @@ h2{
   margin-top: 40px;
   z-index: 1;
 }
+=======
+>>>>>>> abe59358d05af0a0791042ba7f6019d97e990c61

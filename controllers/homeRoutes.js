@@ -13,14 +13,24 @@ router.get('/', async (req, res) => {
 });
 
 // gets the login page WORKS
+// router.get('/login', (req, res) => {
+//   // If the user is already logged in, redirect the request to another route
+//   //if (req.session.logged_in) {
+//   //res.redirect('/profile');
+//   //return;
+//   //}
+//   // res.sendFile(path.join(__dirname, '../views/login.html'));
+//   // method below is for handlebars
+//   res.render('login');
+// });
+
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  //if (req.session.logged_in) {
-  //res.redirect('/profile');
-  //return;
-  //}
-  // res.sendFile(path.join(__dirname, '../views/login.html'));
-  // method below is for handlebars
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
+
   res.render('login');
 });
 
