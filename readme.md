@@ -21,6 +21,8 @@ The app is deployed through Heroku. **[Check out the site here!](https://note-ta
 
 ![Site Photo](/public/assets/images/BeerNuts_mainpage.png)
 
+![Demo](https://user-images.githubusercontent.com/74884495/115098274-6641f080-9eec-11eb-9e6d-f1d368b725ac.gif)
+
 ## User Story
 <pre><code>AS A lover of beer and trying new things
 I WANT to be able to search for a brewery
