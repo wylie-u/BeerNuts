@@ -31,12 +31,12 @@ body {
 
 #nav-link2 {
   margin-top: 45px;
-  margin-left: 100px;
+  margin-left: 82px;
   color: whitesmoke;
 }
 #nav-link3 {
   margin-top: 45px;
-  margin-left: 430px;
+  margin-left: 327px;
   color: whitesmoke;
 }
 
@@ -225,11 +225,11 @@ img {
   .addBreweryText {
     margin-left: 0px !important;
   }
-.card-about {
-  margin-left: 0px;
-  margin-top: 200px;
-  width: 343px !important;
-}
+  .card-about {
+    margin-left: 0px;
+    margin-top: 200px;
+    width: 343px !important;
+  }
 }
 
 .card-text li {
@@ -261,12 +261,11 @@ h2 {
   color: black;
 }
 
-
 #addBrewery {
   height: 800px !important;
 }
 .card-addBrewery {
- margin-top: 40px;
+  margin-top: 40px;
 }
 
 #submitNewBrewery {
@@ -278,8 +277,6 @@ h2 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 400px;
- 
-
 }
 
 .hide-form {
