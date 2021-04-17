@@ -100,7 +100,7 @@ h1 {
 }
 .card-about {
   margin-top: 20px;
-  margin-left: 60px;
+  margin-left: 80px;
   text-align: center;
 }
 .card-login {
@@ -188,6 +188,7 @@ img {
   }
   .card-login {
     margin-left: 0;
+    margin-bottom: 150px;
     width: 320px !important;
   }
   #login-email {
@@ -224,21 +225,11 @@ img {
   .addBreweryText {
     margin-left: 0px !important;
   }
-  /* .card-submission {
-    margin-left: 0 !important;
-    width: 290px !important;
-  } */
-  .card-addBrewery {
-    margin-left: 0 !important;
-    /* width: 500px !important; */
-  }
-
-  .card-about {
-    padding-top: 0px;
-    margin-left: 0px;
-    margin-top: 100px;
-    width: 320px !important;
-  }
+.card-about {
+  margin-left: 0px;
+  margin-top: 200px;
+  width: 343px !important;
+}
 }
 
 .card-text li {
@@ -270,40 +261,12 @@ h2 {
   color: black;
 }
 
-/* #city_name {
-  width: 400px !important;
-  margin-left: 80px;
-}
-#location {
-  width: 400px !important;
-  margin-left: 80px;
-}
-#name {
-  width: 400px !important;
-  margin-left: 80px;
-}
-
-#phone_number {
-  width: 400px !important;
-  margin-left: 80px;
-}
-
-#website {
-  width: 400px !important;
-  margin-left: 80px;
-} */
 
 #addBrewery {
   height: 800px !important;
 }
 .card-addBrewery {
-  /* width: 600px; */
-  /* margin-top: -250px !important; */
-  margin-top: 40px;
-  /* margin-left: 260px; */
-  /* margin-bottom: 50px !important; */
-  z-index: 999;
-  
+ margin-top: 40px;
 }
 
 #submitNewBrewery {
@@ -313,13 +276,10 @@ h2 {
 .card-submission {
   font-size: 30px;
   text-align: center;
-  /* width: 500px; */
-  /* margin-left: 310px; */
-  /* max-width: 520px; */
   margin-top: 40px;
   margin-bottom: 400px;
-  z-index: 1;
-  /* display: none !important; */
+ 
+
 }
 
 .hide-form {
