@@ -12,17 +12,7 @@ router.get('/', async (req, res) => {
   // res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
-// gets the login page WORKS
-// router.get('/login', (req, res) => {
-//   // If the user is already logged in, redirect the request to another route
-//   //if (req.session.logged_in) {
-//   //res.redirect('/profile');
-//   //return;
-//   //}
-//   // res.sendFile(path.join(__dirname, '../views/login.html'));
-//   // method below is for handlebars
-//   res.render('login');
-// });
+
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
@@ -43,20 +33,13 @@ router.get('/profile', withAuth, (req, res) => {
 // gets the about page WORKS (needs html)
 router.get('/about', (req, res) => {
   
-  //if (req.session.logged_in) {
-  //res.redirect('/profile');
-  //return;
-  //}
-  // res.sendFile(path.join(__dirname, '../views/about.html'));
-  // method below is for handlebars
+ 
   res.render('about');
 });
 // signup route works 
 router.get('/signup', (req, res) => {
   
   
-  // res.sendFile(path.join(__dirname, '../views/signup.html'));
-  // method below is for handlebars
   res.render('signup');
 });
 
