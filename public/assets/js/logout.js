@@ -13,5 +13,4 @@ const logout = async () => {
   }
 };
 
-// We need to make it so this event listener is only happening when user is logged in
 document.querySelector('.logout').addEventListener('click', logout);

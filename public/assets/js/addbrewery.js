@@ -3,17 +3,6 @@ var thanksRow = document.getElementById('thankyou-row');
 var addBrewRow = document.getElementById('add-brewery-row');
 var submitBreweryBtn = document.getElementById('submitNewBrewery');
 
-// subBtn.addEventListener('submit', handleForm);
-// function handleForm2(event) {
-//   event.preventDefault();
-//   console.log('clicked here');
-//   // newFormHandler();
-// }
-
-// $('#submitNewBrewery').click(function () {
-//   $('.card-addBrewery').hide();
-// });
-
 function hideForm() {
   thanksRow.classList.remove('hide-form');
   addBrewRow.classList.add('hide-form');
@@ -48,7 +37,7 @@ const newFormHandler = async (event) => {
     });
     console.log('successful');
   }
-  // add .show/hide here
+
 };
 
 buttonSub.addEventListener('submit', newFormHandler);
