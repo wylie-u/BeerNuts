@@ -4,7 +4,7 @@
 
 This project gives a user the opportunity to discover a new brewery of their liking, with the opportunity to add a place to their favorites or to a wishlist, all of which is tracked through a profile page the user sets up.
 
-The app is deployed through Heroku. **[Check out the site here!](https://note-taker-du-21.herokuapp.com/)**
+The app is deployed through Heroku. **[Check out the site here!](https://shrouded-reaches-33204.herokuapp.com/)**
 
 
 
